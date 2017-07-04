@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang = "en-us">
+<head>
+	<meta charset = "utf-8">
+	<title>Semantic Structure Introduction</title>
+	<meta name = "author" content = "Teancum">
+	<meta name = "viewport" content = "width = device-width">
+	<link href = "../css/semanticPresentation.css" type = "text/css" rel = "stylesheet" media = "screen">
+</head>
+	<!--"HTML5 Semantic Structures (header, nav, main, footer, aside, section)"-->
+<body>
+	<header>
+		<nav>
+			<a href = "/index.html" class = "mainnav">HOME</a>
+			<a href = "semanticStructure.html" class = "mainnav">Semantic Structure</a>
+		</nav>
+		<h1>TEANCUM and HTML SEMANTIC ELEMENTS</h1>
+		<input type = "search" value = "search" class = "searchbar">
+	</header>
+	<main>
+		<div class = "mainwrap">
+			<div class = "leftaside">
+				<aside><audio controls = "controls">
+					<source src = "../audio/02%20Wreck-It,%20Wreck-It%20Ralph.mp3" type = "audio/mpeg">
+					</audio><figcaption>WRECK IT</figcaption></aside>
+				<aside class = "example" id = "exampleheader"><img src = "../img/exampleheader.PNG"></aside>
+				<aside class = "example" id = "examplefooter"><img src = "../img/examplefooter.PNG"></aside>
+			</div>
+			<div class = "maincenter">
+				<h1>SEMANTIC STRUCTURE</h1>
+					<a href = "http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" target = "_blank"><img src = "../img/HTMLflowchart.PNG" class = semanticFlowChart></a>
+					<figcaption>HTML5 FLOWCHART</figcaption>
+				<h2>&lt;HEADER&gt;</h2>
+					<p>Introduces new content and helps to organize your page. There can be multiple &lt;header&gt; elements on a page. Do NOT confuse with &lt;head&gt; or headings (&lt;h1&gt;, etc)!</p>
+					<a href = "headerelement.html" class = "showme" target =  "_blank">Show Me!</a>
+				<h2>&lt;MAIN&gt;</h2>
+					<p>Organizes the primary content on a page. In the context of proper web development symantics, there should only be one &lt;main&gt; element per page. It should be unique to the page and not be a derivative of any other element (except, of course, &lt;body&gt;).</p>
+					<a href = "mainelement.html" class = "showme" target =  "_blank">Show Me!</a>
+				<h2>&lt;FOOTER&gt;</h2>
+					<p>Typically has information about the company or website, copyright information, contact information, and more. There can be more than one &lt;footer&gt; on a page.</p>
+					<a href = "footerelement.html" class = "showme" target =  "_blank">Show Me!</a>
+				<h2>&lt;NAV&gt;</h2>
+					<p>The &lt;nav&gt; element is used to block together a set of links. Not every link needs to be in a &lt;nav&gt; element, but it is typical if there is more than one link.</p>
+					<a href = "navelement.html" class = "showme" target =  "_blank">Show Me!</a>
+				<h2>&lt;ASIDE&gt;</h2>
+					<p>Related but separate information from the main content of the page. It is literally put to the side of the page.</p>
+					<a href = "https://www.w3schools.com/tags/tag_aside.asp" class = "showme" target =  "_blank">Show Me!</a>
+				<h2>&lt;SECTION&gt;</h2>
+					<p>W3 says, "Thematic grouping of content, typically with a heading"</p>
+					<a href = "https://www.w3schools.com/tags/tag_section.asp" class = "showme" target =  "_blank">Show Me!</a>
+				<h2>&lt;DIV&gt;</h2>
+					<p>Just as the name implies, it is simply a division or section of a web page. The &lt;div&gt; tag seems to be mostly used for CSS formatting.</p>
+					<a href = "https://www.w3schools.com/tags/tag_div.asp" class = "showme" target =  "_blank">Show Me!</a>
+				<h2>ADDITIONAL ELEMENTS</h2>
+					<nav>
+						<a href = "http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" target = "_blank"><img src = "../img/HTMLflowchart.PNG" id = semanticFlowChart></a>
+						<figcaption>HTML5 FLOWCHART</figcaption>
+						<ul>
+							<li><a href = "https://www.w3schools.com/tags/tag_article.asp" class = regnav target =  "_blank">Article</a></li>
+							<li><a href = "https://www.w3schools.com/tags/tag_details.asp" class = regnav target =  "_blank">Details</a></li>
+							<li><a href = "https://www.w3schools.com/tags/tag_figcaption.asp" class = regnav target =  "_blank">Figure Captions</a></li>
+							<li><a href = "https://www.w3schools.com/tags/tag_figure.asp" class = regnav target =  "_blank">Figure</a></li>
+							<li><a href = "https://www.w3schools.com/tags/tag_mark.asp" class = regnav target =  "_blank">Mark</a></li>
+							<li><a href = "https://www.w3schools.com/tags/tag_summary.asp" class = regnav target =  "_blank">Summary</a></li>
+							<li><a href = "https://www.w3schools.com/tags/tag_time.asp" class = regnav target =  "_blank">Time</a></li>
+						</ul>
+					</nav>
+				<h1 id = "final">¡¡END!!</h1>
+			</div><!--Close "maincenter"-->
+			<div class = "rightaside">
+				<aside>
+					<p class = "definition">What does "semantic" mean? I like Wikipedia's definition: "It focuses on the relationship between signifiers—like words, phrases, signs, and symbols—and what they stand for, their denotation."
+						<a href = "https://en.wikipedia.org/wiki/Semantics" target = "_blank">SEMANTIC</a> </p>
+					<p class = "definition">How does this apply to web design and development?</p>
+					<p class = "definition">DON'T FIGHT THE CURRENT!!</p></aside>
+				<aside class = "example" id = "examplemain"><img src = "../img/examplemain.PNG"></aside>
+				<aside id = "markwhite"><iframe src="https://www.youtube.com/embed/4WYGtqeY91c?list=RD4WYGtqeY91c" frameborder="0" allowfullscreen></iframe><br><a href = "https://www.youtube.com/embed/4WYGtqeY91c?list=RD4WYGtqeY91c" target = "_blank">Mark White</a></aside>
+			</div><!--Close "rightaside"-->
+		</div><!--Close "mainwrap"-->
+	</main>
+	<footer>
+		<h2>RESOURCES</h2>
+		<nav class = "worksCited" class = regnav><ul>
+			<a href = "http://webaim.org/techniques/semanticstructure/" class = regnav target =  "_blank">Web Aim</a>
+			<a href = "https://www.w3schools.com/html/html5_semantic_elements.asp" class = regnav target =  "_blank">W3SCHOOLS</a>
+			<a href = "http://html5doctor.com/lets-talk-about-semantics/" class = regnav target =  "_blank">HTML5 Doctor</a>
+			<a href = "http://webstyleguide.com/wsg3/5-site-structure/2-semantic-markup.html" class = regnav target =  "_blank">Web Style Guide</a>
+			</ul></nav>
+		<h2>&copy;Enkey Enterprises</h2>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<title>HMTL &amp; CSS SYNTAX</title>
+		<meta name = "description" content = "Provide the basic rules of HTML and CSS syntax">
+	</head>
+	<body>
+		<div id = "bodywrap">
+			<header>
+				<h1>HTML and CSS RULES</h1>
+			</header>
+			<main>
+				<h2>HTML Syntax Rules</h2>
+				<ol>
+					<li>Elements and attributes are lower case.</li>
+					<li>Attribute values are quoted.</li>
+					<li>All elements must close.</li>
+					<li>Elements must open and close in order.</li>
+				</ol>
+				<h2>CSS Syntax Rules</h2>
+				<ol>
+					<li>Rule Set</li>
+					<li><ul>
+							<li>Selector</li>
+							<li>Declaration Block</li>
+							<li><ul>
+								<li>Property: part before colon</li>
+								<li>Value: part after the colon</li>
+								</ul></li>
+						</ul></li>
+					<li>Selector examples</li>
+					<li><ul>
+						<li>&#42; - Universal Selector</li>
+						<li>Element Type Selector (Type Selector) - for &lt;nav&gt;, &lt;h1&gt;, etc</li>
+						<li>ID Selector - &#35;[idname]</li>
+						<li>Class Selector - .classname (just a dot or period followed [no spaces] by the class name)</li>
+						</ul></li>
+					<li>Family Trees</li>
+					<li><ul>
+						<li>Parent, child, descendant, and sibling elements</li>
+						<li>Combinators are used to group families together (selector space selector; .box #container)</li>
+						<li>A child combinator will only affect immediate descendants (.box > #container)</li>
+						<li>Sibling combinators affect elements beside each other in a larger container (h1 ~ p)</li>
+						<li>Immediate sibling only affects elements adjacent (p + p)</li>
+						</ul></li>
+					<li>Attribute Selector (input[type])</li>
+					<li>Pseudo-Class (a:hover)</li>
+					<li>Pseudo-Element (.box:before)</li>
+					<li>Elements can be combined (p.box OR p, div, .box OR etc)</li>
+					<li>Cascade: the lower down an element, the higher it's precedence</li>
+					<li>Specificity</li>
+					<li><ul>
+						<li><a href = "https://css-tricks.com/specifics-on-css-specificity/" target = "_blank">Specificity calculations example</a></li>
+						<li>1   point  - element</li>
+						<li>10  points - class</li>
+						<li>100 points - id</li>
+						</ul></li>
+				</ol>
+				<h2>Box Model</h2>
+				<ul>
+					<li>Content - hold the content</li>
+					<li>Padding - inside the element around the content</li>
+					<li>Border - at the edge of the element around the padding</li>
+					<li>Margin - outside the element surrounding the border</li>
+				</ul>
+			</main>
+			<footer>
+				&copy;Enkey Enterprises
+			</footer>
+		</div><!--Close "bodywrap"-->
+	</body>
+</html>

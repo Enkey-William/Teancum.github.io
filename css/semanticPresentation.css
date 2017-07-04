@@ -1,0 +1,98 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	max-width: inherit;
+	font-size: 120%;
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: dodgerblue;
+	align-items: center;
+}
+
+.searchbar
+{
+	height: 20px;
+}
+
+.semanticflowchart
+{
+	width: 550px;
+	height: 375px;
+}
+
+img
+{
+	width: 451px;
+	height: 375px;
+}
+
+.mainwrap
+{
+	display: flex;
+	background-color: deepskyblue;
+}
+
+p.definition
+{
+	margin-left: 10px;
+}
+
+p
+{
+	text-align: justify;
+}
+
+.leftaside, .rightaside
+{
+	width: 30%;
+	background-color: dodgerblue;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#exampleheader
+{
+	margin-top: 300px;
+	margin-right: 10px;
+}
+
+#examplefooter
+{
+	margin-top: 300px;
+	margin-right: 10px;
+}
+
+#examplemain
+{
+	margin-top: 485px;
+	margin-left: 10px;
+}
+
+iframe
+{
+	width: 450px;
+	height: 275px;
+	margin-left: 10px;
+	margin-top: 300px;
+}
+
+.maincenter
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer
+{
+	background-color: dodgerblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

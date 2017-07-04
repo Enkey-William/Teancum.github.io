@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<title>Flexbox Syntax</title>
+	<meta name = "author" content = "Teancum">
+	<meta name = "description" content = "An explanation of flexbox syntax at a very basic level.">
+	<meta name = "viewport" content = "width = device-width">
+	<link href = "../css/flexboxPresentation.css" type = "text/css" rel = "stylesheet" media = "screen">
+	</head>
+<body><!--Try using a lot of notes to make it easy to understand what different classes, id's, etc are for and when closed.-->
+	<div id = "bodywrap"><!--Create a box to encompass the entire page.-->
+		<nav id = "mainnav"><!--Create a box to encompass the main navigation for the page.-->
+			<ul class = "navlist"><!--Create a class to affect all navigation links inside unordered lists.-->
+				<li><a href = "../index.html">Home</a></li><!--Back to TEANCUM main page.-->
+				<li><a href = "html_css_syntax.html" target = "_blank">Notes</a></li><!--Literally a notes page with no css.-->
+				<li><a href = "semanticStructure.html" target = "_blank">Semantic Structure</a></li><!--Previous presentation with related content.-->
+				<li><a href = "flexboxsyntax.html">Flexbox Syntax</a></li><!--Yes, this is a link to where you are.-->
+				<li><a href = "www.google.com" target = "_blank">Google</a></li><!--Can be replaced with search when JQUERY is used.-->
+			</ul>
+		</nav><!--Close "mainnav"-->
+		<header>
+			<h1>Flexbox Syntax</h1>
+		</header>
+		<main>
+		<h2>Why Flexbox?</h2>
+			<div class = "paragraph"><!--Create a container to push the paragraphs to the left.-->
+				<p>Flexbox is a one-dimentional system put in place &#40;using CSS3&#41; to help organize web page layouts. It is relatively simplistic yet strict in application &#40;just like all CSS&#41;, which may cause confusion when first put into practice.</p>
+				<p>It is meant to be used to help simplify CSS and strengthen a web designers ability to make responsive internet sites.</p>
+			</div><!--Close "paragraph"-->
+		<h2>How do I use it?</h2>
+			<div class = "paragraph">
+				<p>It is very simple. First, a container must be set to 'display: flex' or 'display: inline-flex'. This is very important, because the Flexbox is triggered into action by the 'display' property. Flexbox then uses typical CSS syntax: </p>
+				<p>property: value</p>
+				<p>which is placed in an element selector, such as .containerclass, &#35;boxid, et cetera. There are different properties and values which can be used with parent and child selectors in order to get the desired effect.</p>
+			</div><!--Close "paragraph"-->
+			<img src = "../img/exampleflexbox.PNG" alt = "example CSS Flexbox">
+		<h2>Properties: Values</h2>
+			<div class = "paragraph">
+				<p>Flex can be initiated by the 'display' property &#40;ie a container&#41;; flex or inline-flex are the values. The following can then be used in the container element selector to influence children elements:</p>
+			</div><!--Close "paragraph"-->
+			<ul class = "paragraph">
+				<li><span class = "boldit">flex-direction:</span> row, row-reverse, column, column-reverse; row is the default.</li>
+				<li><span class = "boldit">flex-wrap:</span> nowrap, wrap, wrap-reverse; nowrap is the default.</li>
+				<li><span class = "boldit">flex-flow:</span> &#91;flex-direction flex-wrap&#93;; a combination of the first two.</li>
+				<li><span class = "boldit">justify-content:</span> flex-start, flex-end, center, space-between, space-around; affects content along main axis.</li>
+				<li><span class = "boldit">align-items:</span> flex-start, flex-end, center, baseline, stretch; affects content along cross axis.</li>
+				<li><span class = "boldit">align-content:</span> stretch, flex-start, flex-end, center, space-around, space-between; affects space along cross axis &#40;when there is more than one row/column&#41;; stretch is the default;</li>
+			</ul>
+			<div class = "paragraph">
+				<p>The following properties are placed within the children element selectors:</p>
+			</div><!--Close "paragraph"-->
+				<ul class = "paragraph">
+					<li><span class = "boldit">order:</span> &#40;integer value&#41;; the default is source order.</li>
+					<li><span class = "boldit">flex-grow:</span> &#40;integer value&#41;; the default is 0.</li>
+					<li><span class = "boldit">flex-shrink:</span> &#40;integer value&#41;; positive integers only.</li>
+					<li><span class = "boldit">flex-basis:</span> auto, integer value; the default is 0.</li>
+					<li><span class = "boldit">flex:</span> &#91;flex-grow, flex-shrink, flex-basis&#93;</li>
+					<li><span class = "boldit">align-self:</span> flex-start, flex-end, center, baseline, stretch.</li>
+				</ul>
+		</main>
+		<footer>
+			<h2>Works Cited</h2>
+			<nav class = "sourcesNav">
+				<ul class = "navlist">
+					<li><a href = "http://learnlayout.com/flexbox.html" target = "_blank">Learn Layout</a></li>
+					<li><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target = "_blank">Mozilla Developer</a></li>
+					<li><a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target = "_blank">CSS-tricks</a></li>
+					<li><a href = "https://www.w3schools.com/default.asp" target = "_blank">W3Schools</a></li>
+				</ul>
+			</nav>
+			<p>&copy;Enkey Enterprises 2017</p>
+		</footer>
+	</div><!--Close "bodywrap".-->
+	</body>
+</html>

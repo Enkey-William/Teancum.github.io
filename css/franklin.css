@@ -1,0 +1,278 @@
+*
+{
+	box-sizing: border-box; /* changes width property to total width instead of content width */
+}
+
+article,aside,footer,header,
+nav,section,main,figcaption,figure
+{
+	display: block; /* just in case we have	any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+body
+{
+	margin: 0; /* remove any margin from body */
+	padding: 0; /* ditto for padding */
+	background-color: #A6D8DB; /*A light blue color*/
+	font-family: helvetica, "second-choice", arial, "third-choice", sans-serif;
+	background-image: url(../img/sunny-winter.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bodywrap /*create a box to include the entire page*/
+{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+main
+{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+ul
+{
+	list-style: none;
+}
+
+.mainnav
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #F07C6C;/*Some sort of pink*/
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+
+
+.mainnav ul
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a:link
+{
+	text-decoration: none;
+	color: #4A4653;
+}
+
+nav a:visited
+{
+	text-decoration: none;
+	color: #4A4653;
+}
+
+nav a:hover
+{
+	text-decoration: none;
+	color: #E7EF61;
+}
+
+nav a:active
+{
+	text-decoration: none;
+	color: #A6D8DB;
+}
+
+.title
+{
+	display: flex;
+	flex-flow: column;
+}
+
+.title h1
+{
+	text-align: right;
+}
+
+header
+{
+	display: flex;
+	background-color: #A6D8DB;
+}
+
+div h1
+{
+	margin-top: -16px;
+	font-size: 18px;
+}
+
+.bottomoftemp
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.temp
+{
+	width: 125px;
+	text-align: center;
+}
+
+footer
+{
+	display: flex;
+	font-size: 20px;
+	background-color: #A6D8DB;
+}
+
+footer a
+{
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: sansita, "second choice", generic-family;
+}
+
+h1
+{
+	font-size: 30px;
+}
+
+h2
+{
+	font-size: 27px;
+}
+
+p
+{
+	font-size: 24px;
+}
+
+.current, .location, .temp
+{
+	background-color: rgba(200,200,200,.6);
+	margin: .2em auto;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+#weatherimage
+{
+	width: 20px;
+	height: 20px;
+}
+
+.hourly
+{
+	display: none;
+}
+
+.description
+{
+	display: none;
+}
+
+#locimage, #hourlyimage, #currentimage
+{
+	display: none;
+}
+
+@media screen and (min-width: 625px)
+{
+	.mainnav
+	{
+		position: inherit;
+		font-size: 28px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	ul
+	{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	main
+	{
+		display: flex;
+		flex-flow: row-reverse;
+		align-items: stretch;
+	}
+
+	.hourly
+	{
+		width: 33%;
+		max-height: 80%;
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(200,200,200,.6);
+		margin: .2em auto;
+		border: 1px solid;
+		border-radius: 5px;
+	}
+
+	.hourly ul
+	{
+		display: flex;
+		flex-flow: column;
+	}
+
+	.loc_temp
+	{
+		width: 33%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		background-color: rgba(200,200,200,.6);
+		margin: .2em auto;
+		border: 1px solid;
+		border-radius: 5px;
+	}
+
+	.location
+	{
+		width: 100%;
+		background-color: transparent;
+		margin-top: -42px;
+		border: none;
+	}
+
+	.temp
+	{
+		width: 100%;
+		background-color: transparent;
+		margin: .2em auto;
+		border: 1px solid;
+		border-radius: 5px;
+	}
+
+	.current
+	{
+		width: 33%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.description
+	{
+		display: inherit;
+	}
+
+	.current, .location, .hourly, .loc_temp
+	{
+		text-align: center;
+	}
+
+	#hourlyimage, #locimage, #currentimage
+	{
+		display: inherit;
+		width: 40px;
+		height: 40px;
+	}
+}

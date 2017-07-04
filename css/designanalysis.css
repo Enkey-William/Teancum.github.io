@@ -1,0 +1,107 @@
+body
+{
+	background-color: #061A40; /*MAASTRICHT BLUE*/
+	font-size: 135%;
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	color: #B9D6F2; /*Pale aqua*/
+}
+
+.topsection
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: #006DAA;/*HONOLULU BLUE*/
+	height: 100px;
+}
+
+.mainnav
+{
+	text-align: center;
+	font-size: 150%;
+}
+
+a:link
+{
+	color:#061A40; /*MAASTRICHT BLUE*/
+}
+
+a:visited
+{
+	color: #B9D6F2; /*Pale aqua*/
+}
+
+.topcenter
+{
+	text-align: center;
+}
+
+.topcenter p
+{
+	text-align: center;
+}
+
+.searchbar
+{
+	height: 25%;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pagewrap
+{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0353A4;/*Medium Electric Blue*/
+}
+
+.examplepicture
+{
+	height: 662px;
+	width: 372px;
+}
+
+.contrast
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.contrast01
+{
+	margin-right: 30px;
+}
+
+.constrast02
+{
+	margin-left: 30px;
+}
+
+p
+{
+	text-align: justify;
+}
+
+ul
+{
+	list-style: none;
+}
+
+.footul
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 125%;
+
+}

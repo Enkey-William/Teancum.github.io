@@ -1,0 +1,50 @@
+h1
+{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 2em;
+}
+
+body
+{
+	background-color: skyblue;
+	text-align: center;
+	overflow: hidden;
+}
+
+h2
+{
+	text-align: center;
+}
+
+footer
+{
+	text-align: center;
+}
+
+li
+{
+	text-align: center;
+	color: darkblue;
+	font-size: 1.5em;
+	text-decoration: none;
+	border: 5px darkblue;
+}
+
+ a:visited
+{
+	color: white;
+}
+
+ul
+{
+	list-style: none;
+}
+
+li > ul
+{
+	color: black;
+	font-size: 1em;
+	text-decoration: none;
+	display: none;
+}

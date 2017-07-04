@@ -1,0 +1,79 @@
+body /*Set options to affect the entire page.*/
+{
+	background-color: #A9CEF4; /*Pale Cornflower Blue*/
+	font-size-adjust: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 135%;
+	font-family: helvetica, "second-choice", arial, "third-choice", sans-serif; /*Choose an easily readable font.*/
+}
+
+ul
+{
+	list-style: none; /*Take away those annoying bullets next to each list item.*/
+}
+
+.navlist
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+a:link, a:visited
+{
+	text-decoration: none; /*Take away the underline so the text stands on its own.*/
+	background-color: #01BAEF; /*Cyan (Process)*/
+	color: #000000; /*Black*/
+	padding: 5px;
+	border: 5px solid #001F54; /*Oxford Blue*/
+	font-size: 135%;
+}
+
+a:hover, a:active
+{
+	background-color: #FBFBFF; /*Ghost White*/
+}
+
+.boldit
+{
+	font-weight: bold;
+}
+
+header
+{
+	text-align: center;
+	margin-top: 50px;
+}
+
+main
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1, h2
+{
+	background-color: #01BAEF; /*Cyan (Process)*/
+	color: #000000; /*Black*/
+	padding: 5px;
+	border: 5px solid #001F54; /*Oxford Blue*/
+}
+
+footer
+{
+	text-align: center;
+}
+
+.paragraph
+{
+	width: 55%; /*Set the width of the paragraph containers for easy reading.*/
+}
+/* Color options
+#000000 Registration Black
+#A9CEF4 Pale Cornflower Blue
+#01BAEF Cyan (Process)
+#001F54 Oxford Blue
+#FBFBFF Ghost White
+*/
