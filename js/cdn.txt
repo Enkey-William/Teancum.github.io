@@ -1,0 +1,50 @@
+Minified
+-------------------------------------------------------------------
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+Slim and Minified
+-------------------------------------------------------------------
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+crossorigin="anonymous"></script>
+
+Uncompressed
+-------------------------------------------------------------------
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+
+Google
+-------------------------------------------------------------------
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+Microsoft
+-------------------------------------------------------------------
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.map
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.slim.js
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.slim.min.js
+http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.slim.min.map
+
+CDNJS on GITHUB
+-------------------------------------------------------------------
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.map
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.map
+
+JS Deliver
+-------------------------------------------------------------------
+https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js
+https://cdn.jsdelivr.net/jquery/3.2.1/jquery.slim.min.js
+https://cdn.jsdelivr.net/jquery/3.2.1/core.js
+https://cdn.jsdelivr.net/jquery/3.2.1/jquery.js
+https://cdn.jsdelivr.net/jquery/3.2.1/jquery.slim.js
+https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.map
+https://cdn.jsdelivr.net/jquery/3.2.1/jquery.slim.min.map
