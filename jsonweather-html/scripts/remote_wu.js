@@ -24,7 +24,7 @@ $(function () {
   function getData(lat, long)
 	{
 	$.ajax({
-		url: "https://api.wunderground.com/api/7896087b2d3c9b8b/geolookup/q/" + lat + "," + long + ".json",
+		url: "https://api.wunderground.com/api/7896087b2d3c9b8b/geolookup/conditions/forecast/hourly/q" + lat + "," + long + ".json",
 		success: function(data)
 		{
 			console.log(data);
