@@ -1,124 +1,88 @@
 <!doctype html>
 <html lang = "en-us">
-	<head>
-		<meta charset = "utf-8">
-		<title>Franklin Weather</title>
-		<meta name = "author" content = "Teancum">
-		<meta name = "viewport" content = "width = device-width">
-		<meta name = "description" content = "weather,Franklin,Idaho">
-		<link href = "../css/franklin.css" type = "text/css" rel = "stylesheet" media = "screen">
-	</head>
-	<body>
-		<div class = "bodywrap">
-			<header>
-				<div class = "title">
-					<img src = "../img/logo-blue.jpg" alt = "logo" width = "350">
-					<h1>Local Weather</h1>
-				</div><!--Close "title"-->
-			</header><!--Close main header-->
-			<nav class = "mainnav">
-				<ul>
-					<li><a href = "planweathersite.html">Home</a></li>
-					<li><a href = "franklinmain.html">Franklin</a></li>
-					<li><a href = "greenvilleweather.html" target = "_blank">Greenville</a></li>
-					<li><a href = "" target = "_blank">Springfield</a></li>
-					<li><a href = "" target = "_blank">Search</a></li>
-				</ul>
-			</nav><!--Close "mainnav"-->
-			<main>
-				<div class = "hourly">
-					<h2><img src = "../img/cool-joe.jpg" alt = "idk" id = "hourlyimage">Hourly Forecast</h2>
-					<ul>
-						<li>"0": 67, &#9729;</li>
-						<li>"1": 67, &#9733;</li>
-						<li>"2": 69, &#9733;</li>
-						<li>"3": 69, &#9729;</li>
-						<li>"4": 69, &#9748;</li>
-						<li>"5": 70, &#9748;</li>
-						<li>"6": 69, &#9729;</li>
-						<li>"7": 72, &#9729;</li>
-						<li>"8": 74, &#9729;</li>
-						<li>"9": 77, &#9728;</li>
-						<li>"10": 79, &#9728;</li>
-						<li>"11": 81, &#9728;</li>
-						<li>"12": 84, &#9728;</li>
-						<li>"13": 86, &#9728;</li>
-						<li>"14": 88, &#9728;</li>
-						<li>"15": 90, &#9728;</li>
-						<li>"16": 90, &#9728;</li>
-						<li>"17": 85, &#9728;</li>
-						<li>"18": 83, &#9728;</li>
-						<li>"19": 79, &#9728;</li>
-						<li>"20": 74, &#9733;</li>
-						<li>"21": 70, &#9733;</li>
-						<li>"22": 68, &#9733;</li>
-						<li>"23": 66, &#9732;</li>
-					</ul>
-				</div><!--Close "hourly"-->
-				<div class = "loc_temp">
-					<h2 class = "location"><img src = "../img/cool-joe.jpg" alt = "idk" id = "locimage">Franklin, ID</h2>
-				<div class = "temp">
-					<p>70</p>
-					<div class = "bottomoftemp">
-						<p><img src = "../img/sun.jpg" alt = "weatherimage" id = "weatherimage" ></p>
-						<p>66/90</p>
-					</div><!--Close "bottomoftemp"-->
-				</div><!--Close "temp"-->
-				<div class = "description">
-					<p>Sunny</p>
-				</div><!--Close "description"-->
-				</div><!--Close "loc_temp"-->
-				<div class = "current">
-					<h2><img src = "../img/cool-joe.jpg" alt = "idk" id = "currentimage">Current Conditions</h2>
-					<p>Wind: 1 - 5 mph <br>Southwest</p>
-					<p>Precipitation: 0%</p>
-				</div><!--Close "current"-->
-			</main><!--Close main-->
-			<footer>
-				<a href = "" target = "_blank">Copyright</a>
-				<a href = "" target = "_blank">Link to Home</a>
-			</footer><!--Close main footer-->
-		</div><!--Close "bodywrap"-->
-	</body>
+    <head>
+        <meta charset = "utf-8">
+        <title>Franklin Weather</title>
+        <meta name = "author" content = "Teancum">
+        <meta name = "viewport" content = "width = device-width">
+        <meta name = "description" content = "weather,Franklin,Idaho">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href = "../css/franklin.css" type = "text/css" rel = "stylesheet" media = "screen">
+    </head>
+    <body>
+        <div class = "bodywrap">
+            <header>
+                <div class = "title">
+                    <img src = "../img/logo-blue.jpg" alt = "logo" width = "350">
+                    <h1>Local Weather</h1>
+                </div><!--Close "title"-->
+            </header><!--Close main header-->
+            <nav class = "mainnav">
+                <ul>
+                    <li><a href = "planweathersite.html">Home</a></li>
+                    <li><a href = "franklinmain.html">Franklin</a></li>
+                    <li><a href = "greenvilleweather.html" target = "_blank">Greenville</a></li>
+                    <li><a href = "springfieldweather.html" target = "_blank">Springfield</a></li>
+                    <li><a href = "" target = "_blank">Search</a></li>
+                </ul>
+            </nav><!--Close "mainnav"-->
+            <main>
+                <div class = "hourly">
+                    <h2><img src = "../img/cool-joe.jpg" alt = "idk" id = "hourlyimage">Hourly Forecast</h2>
+                    <div id = "hourlyTEMP"></div>
+                </div><!--Close "hourly"-->
+                <div class = "loc_temp">
+                    <h2 class = "location" id = "cityState"><img src = "../img/cool-joe.jpg" alt = "idk" id = "locimage"></h2>
+                <div class = "temp">
+                    <p id = "currTEMP"></p>
+                    <div class = "bottomoftemp">
+                        <p><img src = "" alt = "weatherimage" id = "weatherimage" ></p>
+                        <p id = "hi_low"></p>
+                    </div><!--Close "bottomoftemp"-->
+                </div><!--Close "temp"-->
+                <div class = "description">
+                    <p>Sunny</p>
+                </div><!--Close "description"-->
+                </div><!--Close "loc_temp"-->
+                <div class = "current">
+                    <h2><img src = "../img/cool-joe.jpg" alt = "idk" id = "currentimage">Current Conditions</h2>
+                    <p id = "summary"></p>
+                    <p id = "tonight"></p>
+                </div><!--Close "current"-->
+            </main><!--Close main-->
+            <footer>
+                <a href = "" target = "_blank">Copyright</a>
+                <a href = "" target = "_blank">Link to Home</a>
+                <script src = "../js/jquery-3.2.1.min.js"></script>
+                <script src = "../scripts/franklin_script.js"></script>
+            </footer><!--Close main footer-->
+        </div><!--Close "bodywrap"-->
+    </body>
 </html>
 
-<!--FOR LATER
-<ul>
-<li>JSON Data</li>
-<li>"City": "Franklin"</li>
-<li>"State": "ID",</li>
-<li>"High": 90,</li>
-<li>"Low": 66,</li>
-<li>"Precip": 0,</li>
-<li>"Wind": "1 - 5",</li>
-<li>"Direction": "Southwest",</li>
-<li>"Summary": "Sunny",</li>
-<li>"Longitude": -111.803757,</li>
-<li>"Latitude": 42.011902,</li>
-<li>"zip": 83237,</li>
-<li>"Hourly": </li>
-<li>"0": 67, &#9729</li>
-<li>"1": 67, &#9733</li>
-<li>"2": 69, &#9733</li>
-<li>"3": 69, &#9729</li>
-<li>"4": 69, &#9748</li>
-<li>"5": 70, &#9748</li>
-<li>"6": 69, &#9729</li>
-<li>"7": 72, &#9729</li>
-<li>"8": 74, &#9729</li>
-<li>"9": 77, &#9728</li>
-<li>"10": 79, &#9728</li>
-<li>"11": 81, &#9728</li>
-<li>"12": 84, &#9728</li>
-<li>"13": 86, &#9728</li>
-<li>"14": 88, &#9728</li>
-<li>"15": 90, &#9728</li>
-<li>"16": 90, &#9728</li>
-<li>"17": 85, &#9728</li>
-<li>"18": 83, &#9728</li>
-<li>"19": 79, &#9728</li>
-<li>"20": 74, &#9733</li>
-<li>"21": 70, &#9733</li>
-<li>"22": 68, &#9733</li>
-<li>"23": 66, &#9732</li>
-</ul>-->
+<!--   <ul>
+<li>"0": 67, &#9729;</li>
+<li>"1": 67, &#9733;</li>
+<li>"2": 69, &#9733;</li>
+<li>"3": 69, &#9729;</li>
+<li>"4": 69, &#9748;</li>
+<li>"5": 70, &#9748;</li>
+<li>"6": 69, &#9729;</li>
+<li>"7": 72, &#9729;</li>
+<li>"8": 74, &#9729;</li>
+<li>"9": 77, &#9728;</li>
+<li>"10": 79, &#9728;</li>
+<li>"11": 81, &#9728;</li>
+<li>"12": 84, &#9728;</li>
+<li>"13": 86, &#9728;</li>
+<li>"14": 88, &#9728;</li>
+<li>"15": 90, &#9728;</li>
+<li>"16": 90, &#9728;</li>
+<li>"17": 85, &#9728;</li>
+<li>"18": 83, &#9728;</li>
+<li>"19": 79, &#9728;</li>
+<li>"20": 74, &#9733;</li>
+<li>"21": 70, &#9733;</li>
+<li>"22": 68, &#9733;</li>
+<li>"23": 66, &#9732;</li>
+</ul>    -->
