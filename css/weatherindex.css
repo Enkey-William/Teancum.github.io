@@ -1,0 +1,45 @@
+body
+{
+    background-color: aqua;
+}
+
+ul
+{
+    list-style: none;
+    font-size: 20px;
+}
+
+#mainnav nav ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainnav nav ul li
+{
+    border: 2px solid black;
+}
+
+h1, h2, h3
+{
+    text-align: center;
+}
+
+#temperatures, #summaries, #forecastbox
+{
+    text-align: center;
+}
+
+@media screen and (min-width: 625px)
+{
+    #weatherShtuffs
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    #temperatures, #summaries, #forecastbox
+    {
+        width: 33%;
+    }
+
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang = "en-us">
+    <head>
+        <meta charset = "utf-8">
+        <title>Current Weather</title>
+        <meta name = "author" content = "Teancum">
+        <meta name = "viewport" content = "width = device-width">
+        <meta name = "description" content = "weather,Franklin,Idaho">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link href = "../css/weatherindex.css" type = "text/css" rel = "stylesheet" media = "screen">
+    </head>
+    <body>
+        <div id = "mainnav">
+            <nav>
+                <ul>
+                    <li href = "../index.html" target = "_blank">Teancum Home</li>
+                    <li href = "franklinmain.html" target = "_blank">Franklin Main</li>
+                </ul>
+            </nav>
+        </div><!-- Close mainnav-->
+        <header>
+            <h1>Current Weather</h1>
+            <h2 id = "citySate"></h2>
+        </header>
+        <main>
+            <div id = "weatherShtuffs">
+                <div id = "summaries">
+                    <h2>SUMMARY</h2>
+                    <h3 id = "conditions"></h3>
+                </div><!--Close summaries -->
+                <div id = "temperatures">
+                    <h2>CURRENTLY</h2>
+                    <h3 id = "currTemp"></h3>
+                    <h3>Today's High and Low</h3>
+                    <h3 id = "hi_low"></h3>
+                </div><!--Close temperatures -->
+                <div id = "forecastbox">
+                    <h2>FORECAST</h2>
+                    <h3 id = "forecast"></h3>
+                </div><!--Close hourlyTemps -->
+            </div> <!--Close weatherShtuffs -->
+        </main>
+        <footer>
+            <script src="../js/jquery-3.2.1.min.js"></script>
+            <script src="../scripts/weatherindex.js"></script>
+        </footer>
+    </body>
+</html>
