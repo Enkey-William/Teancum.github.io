@@ -7,3 +7,51 @@
 ** ORANGE #de2226
 ** WHITE  #ffffff
 */
+*
+{
+    margin: 0; /* remove any margin from body */
+    padding: 0;
+}
+
+body
+{
+    font-family: sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#mainnav
+{
+    background-color: #990033;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#mainnav nav ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+footer
+{
+    text-align: center;
+}
+
+@media screen and (min-width: 650px)
+{
+    body
+    {
+        font-size: 2.5em;
+    }
+    #mainnav nav ul
+    {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+}
