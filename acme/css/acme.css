@@ -47,6 +47,22 @@ ul
     justify-content: space-around;
 }
 
+a
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited
+{
+    color: #ffffff;
+}
+
+a:hover
+{
+    background-color: black;
+}
+
 main
 {
     background-color: #ffffff;
