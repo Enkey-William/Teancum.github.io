@@ -29,23 +29,25 @@ $("#mainnav").on("click", "a", function(event){
         //Change output based on which link is clicked
         success: function (data) {
             console.log(data[view]);
-            document.title = "ACME: " + view;
-            $("#title").html(view);
-            $("#description").html("DESCRIPTION: " + data[view].description);
-                console.log(data[view].description);
-            $("#manufacturer").html("Manufactured by: " + data[view].manufacturer);
-                console.log("Manufactured by: " + data[view].manufacturer);
-            $("#price").html("Cost: " + data[view].price);
-                console.log("Cost: " + data[view].price);
-            $("#blank").html("Overall review: " + data[view].reviews + "/5");
-            console.log("Overall review: " + data[view].reviews + "/5");
+            if (view != "Home"){
+                document.title = "ACME: " + view;
+                $("#title").html(view);
+                $("#description").html("DESCRIPTION: " + data[view].description);
+                    console.log(data[view].description);
+                $("#manufacturer").html("Manufactured by: " + data[view].manufacturer);
+                    console.log("Manufactured by: " + data[view].manufacturer);
+                $("#price").html("Cost: " + data[view].price);
+                    console.log("Cost: " + data[view].price);
+                $("#blank").html("Overall review: " + data[view].reviews + "/5");
+                    console.log("Overall review: " + data[view].reviews + "/5");
 
-            $("#picture").empty("img");
-            $("#picture").prepend("<img src='" + data[view].path + "' id = 'picture' alt='product image'>");
+                $("#picture").empty("img");
+                $("#picture").prepend("<img src='" + data[view].path + "' id = 'picture' alt='product image'>");
 
             //hide the main page shtuffs
-            $("#centerdiv").css("display", "none");
-            $("#bottomdiv").css("display", "none");
+                $("#centerdiv").css("display", "none");
+                $("#bottomdiv").css("display", "none");
+            }
         }
     });
 });
