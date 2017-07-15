@@ -1,5 +1,5 @@
 $(function () {
-    $.getJSON("/acme/js/acme.json", function (data) {
+    $.getJSON("/js/acme.json", function (data) {
         console.log(data);
 
         //Begin building output

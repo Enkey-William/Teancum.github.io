@@ -40,7 +40,7 @@ ul
     font-size: 1.5em;
 }
 
-#mainnav nav ul
+#mainnav ul
 {
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +57,7 @@ main
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #centerdiv
@@ -110,6 +111,17 @@ h2
 #product_description
 {
     display: flex;
+    align-items: center;
+}
+
+#picture
+{
+    width: 50%;
+}
+
+#overallDescription
+{
+    width: 50%;
 }
 
 footer
@@ -149,6 +161,11 @@ footer
         justify-content: space-around;
         list-style: none;
         flex-wrap: wrap;
+    }
+
+    #picture
+    {
+        width: 70%;
     }
 
 }

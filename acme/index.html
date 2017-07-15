@@ -8,22 +8,21 @@
     <meta name = "description" content = "ACME is the best product line for cartoons!">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href = "css/acme.css" type = "text/css" rel = "stylesheet" media = "screen">
+    <script src = "js/jquery-3.2.1.min.js"></script>
     </head>
 <body>
     <div id = "bodywrap">
     <header>
         <img src = "images/site/logo.png" alt = "ACME logo" id = "ACMElogo">
     </header>
-        <div id = "mainnav">
-            <nav>
+            <nav id = "mainnav">
                 <ul>
                 </ul>
-            </nav>
-        </div><!--Close mainnav-->
+            </nav><!--Close mainnav-->
     <main>
         <div id = "maindiv">
-            <h2>Welcome to ACME!</h2>
             <div id = "centerdiv">
+                <h2 id = "contentTitle"></h2>
                 <img src = "images/site/feature.jpg" alt = "monthly featured product" id = "feature">
                 <ul id = "featuredescription">
                     <li><h2>Acme Rocket</h2></li>
@@ -55,13 +54,13 @@
             <div id = "products">
                 <h2 id = "title"></h2>
                 <section id = "product_description">
-                    <img src = "" id = "path">
-                    <ul>
-                        <li id = "name"></li>
+                    <img src = '' id = "picture">
+                    <ul id = "overallDescription">
                         <li id = "description"></li>
                         <li id = "manufacturer"></li>
                         <li id = "price"></li>
-                        <li id = "reviews"></li>
+                        <li id = "revIT"></li><!--In my original code, I could never get this line to work. IDK why.-->
+                        <li id = "blank"></li>
                     </ul>
                 </section><!--Close product_description-->
             </div><!--Close products-->
@@ -70,9 +69,8 @@
     <footer>
         <p>&copy; 2017 ACME, All rights reserved.</p>
         <p>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
-        <!--<script src = "https://code.jquery.com/jquery-3.2.1.min.js" integrity = "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin = "anonymous"></script>-->
-        <script src = "../js/jquery-3.2.1.min.js"></script>
+        <script src = "https://code.jquery.com/jquery-3.2.1.min.js" integrity = "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin = "anonymous"></script>
         <script src = "js/acme.js"></script>
     </footer>
     </body>
