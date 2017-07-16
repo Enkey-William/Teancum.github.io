@@ -17,6 +17,7 @@ body
 {
     font-family: "Comic Sans MS", cursive, sans-serif;
     background-color: #000000;
+    opacity: 0.9;
     color: #de2226;
     background-image: url(../images/site/background.jpg);
 }
@@ -47,7 +48,7 @@ ul
     justify-content: space-around;
 }
 
-a
+#mainnav a
 {
     text-decoration: none;
     color: #ffffff;
@@ -55,7 +56,7 @@ a
 
 a:visited
 {
-    color: #ffffff;
+    color: #808080;
 }
 
 a:hover
@@ -84,6 +85,7 @@ main
 #feature
 {
     width: 100%;
+    opacity: 1.0;
 }
 
 #featuredescription
@@ -122,6 +124,7 @@ h2
 {
     margin: 5px;
     padding: 5px;
+    color: #000000;
 }
 
 #product_description
@@ -138,6 +141,13 @@ h2
 #overallDescription
 {
     width: 50%;
+}
+
+#manufacturer, #blank
+{
+    margin: 5px;
+    padding: 5px;
+    color: #0000ee;
 }
 
 footer
