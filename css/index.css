@@ -1,50 +1,91 @@
-h1
+*
 {
-	text-align: center;
-	text-decoration: underline;
-	font-size: 2em;
+    padding: 0px;
+    margin: 0px;
 }
 
 body
 {
-	background-color: skyblue;
-	text-align: center;
-	overflow: hidden;
+    background-color: skyblue;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+    margin: 20px;
 }
 
 h2
 {
-	text-align: center;
+    margin: 20px;
+    text-align: center;
 }
 
-footer
+h3
 {
-	text-align: center;
-}
-
-li
-{
-	text-align: center;
-	color: darkblue;
-	font-size: 1.5em;
-	text-decoration: none;
-	border: 5px darkblue;
-}
-
- a:visited
-{
-	color: white;
+    margin: 20px;
 }
 
 ul
 {
-	list-style: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
-li > ul
+li
 {
-	color: black;
-	font-size: 1em;
-	text-decoration: none;
-	display: none;
+    text-align: center;
+    text-decoration: none;
+    border: 5px darkblue;
+}
+
+a
+{
+    text-decoration: none;
+    background-color: #003559;
+    color: #B9D6F2;
+    padding: 10px;
+}
+
+ a:visited
+{
+    color: white;
+}
+
+#jquery
+{
+    display: none;
+}
+
+footer
+{
+    text-align: center;
+}
+
+@media screen and (min-width: 650px)
+{
+    ul
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
+    nav ul li
+    {
+        margin: 25px;
+        width: 350px;
+    }
+
+    #jquery
+    {
+        flex-direction: column;
+        margin: 0px;
+    }
 }

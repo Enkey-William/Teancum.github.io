@@ -1,6 +1,7 @@
-
 $(function(){
-	$('.assignments > li').hover(function(){
-		$(this).children("ul").slideToggle(200);
-	})
-})
+    $('.assignments > li').hover(function(){
+        $(this).children('ul').slideToggle('fast', function() {
+            // Animation complete.
+        });
+    });
+});

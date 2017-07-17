@@ -7,15 +7,7 @@
     <meta name = "viewport" content = "width = device-width">
     <link href = "css/index.css" type = "text/css" rel = "stylesheet" media = "screen">
     <script src = "js/jquery-3.2.1.min.js"></script>
-    <script>
-        $(function(){
-            $('.assignments > li').hover(function(){
-                $(this).children('ul').slideToggle('fast', function() {
-                    // Animation complete.
-                });
-            });
-        });
-    </script>
+    <script src = "scripts/index.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +21,7 @@
             <li><a href = "html/franklinmain.html" target = "_blank">Franklin Weather</a></li>
             <li><a href = "html/indexGrandCanyonDemo.html" target = "_blank">Grand Canyon Demo</a></li>
             <li id = "jqlist">JQuery Practice
-                <ul class = "jquery">
+                <ul id = "jquery">
                 <li><a href = "intro-jquery-files/Lesson4/index.htm" target = "_blank">Alcove(JQuery practice)</a></li>
                 <li><a href = "intro-jquery-files/Lesson4/animatedMenuBegin.html" target = "_blank">Animated Menu</a></li>
                 <li><a href = "intro-jquery-files/Lesson4/DropDownMenuBegin.htm" target = "_blank">Drop Down Menu</a></li>
@@ -57,7 +49,7 @@
     </main>
 <footer>
     <h2>&copy; Enkey Enterprises</h2>
-    <p>Last update: DTS goes here (please tell me JQUERY can help...)</p>
+    <p>Last update: 2017/07/17</p>
     <!--<script src = "https://code.jquery.com/jquery-3.2.1.min.js"
             integrity = "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin = "anonymous"></script>
