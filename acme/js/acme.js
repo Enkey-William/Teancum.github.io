@@ -23,7 +23,7 @@ $(function()
 $("#mainnav").on("click", "a", function(event){
     var view = $(this).text();
     console.log(view);
-    if (view !== "Home"){
+    if (view != "Home"){
     $.ajax({
         url: "js/acme.json",
         dataType: "json",
@@ -50,5 +50,5 @@ $("#mainnav").on("click", "a", function(event){
         }
     });
     }
-    else $("#mainnav ul").html("<li><a href='/acme/index.html'>Home</a></li>");
+    else view = link('https://enkey-william.github.io/Teancum.github.io/acme/index.html');
 });
